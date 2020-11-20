@@ -47,6 +47,7 @@ run_program("/sbin/cp", "/vendor/etc/default.prop.template", "/sdcard/default.pr
 run_program("/sbin/cp", "/vendor/etc/usb_modeswitch.conf.template", "/sdcard/usb_modeswitch.conf");
 run_program("/sbin/cp", "/vendor/etc/hardkernel-720.bmp.gz", "/sdcard/boot-logo.bmp.gz");
 run_program("/sbin/cp", "/vendor/etc/env.ini.template", "/sdcard/env.ini");
+run_program("/sbin/touch", "/sdcard/firstboot");
 
 unmount("/vendor");
 unmount("/sdcard");
