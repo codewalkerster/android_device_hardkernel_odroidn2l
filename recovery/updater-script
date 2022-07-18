@@ -1,4 +1,4 @@
-#assert(getprop("ro.build.product" == "odroidn2
+#assert(getprop("ro.build.product" == "odroidn2l
 
 show_progress(1.0000, 0);
 
@@ -51,11 +51,8 @@ run_program("/sbin/touch", "/sdcard/firstboot");
 
 set_progress(0.8000);
 
-ui_print("    Change CPU Clock for N2 plus...");
-run_program("sbin/sh", "/sbin/change_cpufreq.sh");
-
 unmount("/vendor");
 unmount("/sdcard");
 
-ui_print("Self installation is completed.\nHave fun with ODROID-N2!\n\n");
+ui_print("Self installation is completed.\nHave fun with ODROID-N2Lite!\n\n");
 set_progress(1.0000);

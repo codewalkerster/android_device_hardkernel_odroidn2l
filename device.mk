@@ -21,10 +21,10 @@ PRODUCT_COPY_FILES += \
 
 ifneq ($(BOARD_USES_RECOVERY_AS_BOOT), true)
 PRODUCT_COPY_FILES += \
-    device/hardkernel/common/products/mbox/ueventd.odroid.rc:root/ueventd.odroidn2.rc
+    device/hardkernel/common/products/mbox/ueventd.odroid.rc:root/ueventd.odroidn2l.rc
 else
 PRODUCT_COPY_FILES += \
-    device/hardkernel/common/products/mbox/ueventd.odroid.rc:recovery/root/ueventd.odroidn2.rc
+    device/hardkernel/common/products/mbox/ueventd.odroid.rc:recovery/root/ueventd.odroidn2l.rc
 endif
 
 # DRM HAL
@@ -74,7 +74,7 @@ PRODUCT_COPY_FILES += \
 endif
 
 PRODUCT_COPY_FILES += \
-    device/hardkernel/$(PRODUCT_DIR)/recovery/init.recovery.odroidn2.rc:root/init.recovery.odroidn2.rc \
+    device/hardkernel/$(PRODUCT_DIR)/recovery/init.recovery.odroidn2l.rc:root/init.recovery.odroidn2l.rc \
     device/hardkernel/$(PRODUCT_DIR)/recovery/recovery.kl:recovery/root/etc/recovery.kl \
     device/hardkernel/$(PRODUCT_DIR)/files/mesondisplay.cfg:recovery/root/etc/mesondisplay.cfg \
     device/hardkernel/$(PRODUCT_DIR)/recovery/remotecfg:recovery/root/sbin/remotecfg \
@@ -125,11 +125,11 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += \
 PRODUCT_PACKAGES += android.hardware.health@2.0-service
 
 PRODUCT_COPY_FILES += \
-    device/hardkernel/odroidn2/files/boot.ini.template:vendor/etc/boot.ini.template \
-    device/hardkernel/odroidn2/files/hardkernel-720.bmp.gz:vendor/etc/hardkernel-720.bmp.gz \
-    device/hardkernel/odroidn2/files/makebootini:vendor/bin/makebootini \
-    device/hardkernel/odroidn2/files/default.prop.template:vendor/etc/default.prop.template \
-    device/hardkernel/odroidn2/files/makedefaultprop:vendor/bin/makedefaultprop \
-    device/hardkernel/odroidn2/files/env.ini.template:vendor/etc/env.ini.template \
-    device/hardkernel/odroidn2/recovery/apply_ini.sh:vendor/bin/apply_ini.sh \
-    device/hardkernel/odroidn2/files/usb_modeswitch.conf.template:vendor/etc/usb_modeswitch.conf.template
+    device/hardkernel/odroidn2l/files/boot.ini.template:vendor/etc/boot.ini.template \
+    device/hardkernel/odroidn2l/files/hardkernel-720.bmp.gz:vendor/etc/hardkernel-720.bmp.gz \
+    device/hardkernel/odroidn2l/files/makebootini:vendor/bin/makebootini \
+    device/hardkernel/odroidn2l/files/default.prop.template:vendor/etc/default.prop.template \
+    device/hardkernel/odroidn2l/files/makedefaultprop:vendor/bin/makedefaultprop \
+    device/hardkernel/odroidn2l/files/env.ini.template:vendor/etc/env.ini.template \
+    device/hardkernel/odroidn2l/recovery/apply_ini.sh:vendor/bin/apply_ini.sh \
+    device/hardkernel/odroidn2l/files/usb_modeswitch.conf.template:vendor/etc/usb_modeswitch.conf.template

@@ -57,7 +57,7 @@ on init
 on fs
     mkdir /mnt/vendor/factory 0755 root root
     mkdir /mnt/vendor/swap_zram0 0700 root root
-    mount_all /vendor/etc/fstab.odroidn2
+    mount_all /vendor/etc/fstab.odroidn2l
     setprop ro.crypto.fuse_sdcard true
     restorecon_recursive /mnt/vendor/param
 
@@ -506,4 +506,4 @@ on property:sys.showtouch=*
 
 on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
-    swapon_all /vendor/etc/fstab.odroidn2
+    swapon_all /vendor/etc/fstab.odroidn2l
