@@ -22,7 +22,7 @@ PRODUCT_DIR := odroidn2l
 # Dynamic enable start/stop zygote_secondary in 64bits
 # and 32bit system, default closed
 #
-ANDROID_BUILD_TYPE := 64
+#ANDROID_BUILD_TYPE := 64
 TARGET_DYNAMIC_ZYGOTE_SECONDARY_ENABLE := true
 
 # Inherit from those products. Most specific first.
@@ -60,6 +60,7 @@ ifeq ($(TARGET_WITH_MEDIA_EXT_LEVEL), 3)
     TARGET_WITH_MEDIA_EXT :=true
     TARGET_WITH_SWCODEC_EXT := true
     TARGET_WITH_CODEC_EXT := true
+    TARGET_WITH_PLAYERS_EXT :=true
 else
 ifeq ($(TARGET_WITH_MEDIA_EXT_LEVEL), 4)
     TARGET_WITH_MEDIA_EXT :=true
