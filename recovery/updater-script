@@ -49,8 +49,6 @@ run_program("/sbin/cp", "/vendor/etc/hardkernel-720.bmp.gz", "/sdcard/boot-logo.
 run_program("/sbin/cp", "/vendor/etc/env.ini.template", "/sdcard/env.ini");
 run_program("/sbin/touch", "/sdcard/firstboot");
 
-set_progress(0.8000);
-
 unmount("/vendor");
 unmount("/sdcard");
 
