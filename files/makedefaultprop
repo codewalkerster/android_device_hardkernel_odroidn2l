@@ -31,12 +31,12 @@ else
 fi
 
 MODEL=`cat /sys/firmware/devicetree/base/model`
-N2LITE="Hardkernel ODROID-N2Lite"
+N2L="Hardkernel ODROID-N2L"
 
 if [ -f /odm/firstboot ]; then
     resize2fs /dev/block/data
     rm /odm/firstboot
-    if [ "$MODEL" = "$N2LITE" ];
+    if [ "$MODEL" = "$N2L" ];
     then
         sed -i s/_big=\"1800\"/_big=\"2208\"/g /odm/env.ini;
         sed -i s/_little=\"1896\"/_little=\"1908\"/g /odm/env.ini;

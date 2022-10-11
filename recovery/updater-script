@@ -51,5 +51,5 @@ run_program("/sbin/cp", "/vendor/etc/env.ini.template", "/sdcard/env.ini");
 unmount("/vendor");
 unmount("/sdcard");
 
-ui_print("Self installation is completed.\nHave fun with ODROID-N2Lite!\n\n");
+ui_print("Self installation is completed.\nHave fun with ODROID-N2L!\n\n");
 set_progress(1.0000);
