@@ -9,7 +9,7 @@ INSTALLED_KERNEL_TARGET := $(PRODUCT_OUT)/kernel
 
 BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET)
 
-KERNEL_DEVICETREE := meson64_odroidn2_android
+KERNEL_DEVICETREE := meson64_odroidn2l_android
 DTB_OUT := $(PRODUCT_OUT)/obj/KERNEL_OBJ/arch/$(KERNEL_ARCH)/boot/dts/amlogic
 DTBO_OUT := $(DTB_OUT)/overlays/odroidn2
 KERNEL_DTBO += $(DTBO_OUT)/*.dtbo
