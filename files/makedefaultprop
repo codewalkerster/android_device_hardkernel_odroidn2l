@@ -30,17 +30,4 @@ else
     cp /vendor/etc/usb_modeswitch.conf.template /odm/usb_modeswitch.conf
 fi
 
-MODEL=`cat /sys/firmware/devicetree/base/model`
-N2L="Hardkernel ODROID-N2L"
-
-if [ -f /odm/firstboot ]; then
-    resize2fs /dev/block/data
-    rm /odm/firstboot
-    if [ "$MODEL" = "$N2L" ];
-    then
-        sed -i s/_big=\"1800\"/_big=\"2208\"/g /odm/env.ini;
-        sed -i s/_little=\"1896\"/_little=\"1908\"/g /odm/env.ini;
-    fi
-fi
-
 echo "Finish"
