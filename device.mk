@@ -130,6 +130,7 @@ PRODUCT_PACKAGES += android.hardware.health@2.0-service
 
 PRODUCT_COPY_FILES += \
     device/hardkernel/odroidn2l/files/boot.ini.template:vendor/etc/boot.ini.template \
+    device/hardkernel/odroidn2l/files/boblight:vendor/bin/boblight \
     device/hardkernel/odroidn2l/files/hardkernel-720.bmp.gz:vendor/etc/hardkernel-720.bmp.gz \
     device/hardkernel/odroidn2l/files/makebootini:vendor/bin/makebootini \
     device/hardkernel/odroidn2l/files/default.prop.template:vendor/etc/default.prop.template \
